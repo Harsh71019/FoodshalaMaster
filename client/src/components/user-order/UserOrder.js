@@ -26,6 +26,7 @@ const UserOrder = (props) => {
               <UserCard
                 amount={item.amount}
                 index={index}
+                resname={item.resname}
                 order={JSON.stringify(item._meals, ["name", "total"])}
               />
             ))}

@@ -58,7 +58,9 @@ class Meals extends Component {
     const payload = {
       amount: this.orderTotal,
       admin: this.restaurantId,
-      resname: this.resDetails,
+      resname: this.state.resDetails,
+      // username: this.state.auth.user.name,
+      // useremail:this.state.auth.user.email,
       _meals: [],
     };
     this.state.meals.forEach((meal) => {
@@ -86,8 +88,8 @@ class Meals extends Component {
   }
 
   render() {
-    const { loading, meals, submitting, resDetails } = this.state;
-    console.log(resDetails);
+    const { loading, meals, submitting, resDetails,auth } = this.state;
+    console.log(auth);
     if (meals.length === 0 && !loading)
       return <div className="center">No Meals Found.</div>;
 

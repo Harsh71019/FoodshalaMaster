@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-const UserCard = ({ order, amount, placed, index }) => {
-  const [meal, setMeal] = useState();
-
+const UserCard = ({ order, amount, resname, index }) => {
   return (
     <div>
-      {order},{amount}
+      <strong>
+        {" "}
+        {index}.|| Restaurant Name:{resname}|| Ordered Items:{order},|| Total
+        Payable:₹{amount},
+      </strong>
     </div>
   );
 };

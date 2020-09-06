@@ -1,0 +1,4 @@
+{
+    "mongoURI":"mongodb+srv://harsh2:harsh@cluster0-sufhs.gcp.mongodb.net/Food?retryWrites=true&w=majority",
+    "jwtSecret":"mysecrettoken"
+}
