@@ -25,7 +25,7 @@ const Restaurants = ({
             Browse and Order with our large collections of restaurants!
           </p>
           <div className="res-name">
-            {restaurants.length > 0 ? (
+            {restaurants && restaurants.length > 0 ? (
               restaurants.map((restaurant) => (
                 <RestaurantItem key={restaurant._id} restaurant={restaurant} />
               ))

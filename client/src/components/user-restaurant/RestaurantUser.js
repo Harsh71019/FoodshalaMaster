@@ -12,7 +12,7 @@ const RestaurantUser = ({
   useEffect(() => {
     getRestaurants();
   }, [getRestaurants]);
-  if (restaurants.length === 0 && !loading)
+  if (restaurants && restaurants.length === 0 && !loading)
     return <div className="center">No Restaurants Found.</div>;
   return (
     <div>
@@ -27,7 +27,7 @@ const RestaurantUser = ({
               Browse and Order with our large collections of restaurants!
             </p>
             <div className="res-name">
-              {restaurants.length > 0 ? (
+              {restaurants && restaurants.length > 0 ? (
                 restaurants.map((restaurant) => (
                   <RestaurantCard
                     key={restaurant._id}
