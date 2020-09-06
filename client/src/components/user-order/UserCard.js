@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import PropTypes from "prop-types";
+import React from "react";
 const UserCard = ({ order, amount, resname, index }) => {
   return (
     <div>

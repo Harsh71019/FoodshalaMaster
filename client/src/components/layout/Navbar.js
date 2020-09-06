@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Link, Redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { logoutAdmin } from "../../actions/admin";
@@ -17,9 +17,6 @@ const Navbar = ({
       </li>
       <li>
         <Link to="/userorder">Your Orders</Link>
-      </li>
-      <li>
-        <Link> </Link>
       </li>
       <li>
         <Link to="/userlogin">

@@ -1,6 +1,5 @@
 import * as PropTypes from "prop-types";
 import React from "react";
-import { Link } from "react-router-dom";
 export function OrderFooter(props) {
   const { disabled, onSubmit, orderTotal } = props;
   return (

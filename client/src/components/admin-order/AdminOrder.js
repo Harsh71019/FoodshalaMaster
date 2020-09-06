@@ -6,7 +6,6 @@ import AdminCard from "./AdminCard";
 
 const AdminOrder = (props) => {
   const [data, setData] = useState([]);
-  const [meal, setMeal] = useState();
 
   // useEffect(async () => {
   //   const result = await axios("/api/orders/admin");
